@@ -1,0 +1,395 @@
+@import url("href=https://fonts.googleapis.com/css2?family=Mallanna&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mallana", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header */
+
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+.nav-main {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Mallanna", cursive;
+}
+label.logo {
+  color: #ff0000;
+  font-size: 25px;
+  line-height: 50px;
+  padding: 0 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  float: right;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 50px;
+}
+a:hover {
+  background: #172670;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 1.2em;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 35vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+    margin: 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover {
+    background: #172670;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* home */
+
+.home {
+  background: url("Krk_Baska_Strand.jpg");
+  /* clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  /* margin: 0 auto; */
+  height: 95vh;
+  position: relative;
+}
+
+.home-title {
+  display: table;
+  margin-left: 54%;
+  margin-top: 21%;
+  padding: 30px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  border: 2px solid #ff0000;
+}
+
+.home-main_1 {
+  text-transform: uppercase;
+  font-family: "Mallanna", cursive;
+  color: #ff0000;
+  font-size: 2em;
+  padding-bottom: 17px;
+  font-size: 2.1em;
+}
+
+.home-main_2 {
+  text-transform: uppercase;
+  font-family: "Mallanna", cursive;
+  color: #ff0000;
+  font-size: 2em;
+}
+/* beschreibung */
+
+.beschreibung {
+}
+
+.beschreibung-container {
+  background-color: rgb(223, 239, 248);
+  color: #172670;
+  font-family: "Mallanna", cursive;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.beschreibung-title {
+  font-size: 2em;
+  text-align: center;
+  padding: 80px 0 30px 0;
+}
+
+.beschreibung-text {
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.beschreibung-teil {
+  padding-left: 80px;
+}
+
+/* lage */
+
+.lage {
+  padding-top: 70px;
+  background-color: #fff;
+}
+
+.krk-container {
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.krk-main {
+  color: #172670;
+  font-family: "Mallanna", cursive;
+}
+
+.krk-title_span {
+  background: rgb(229, 233, 235);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.krk-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.krk-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin: 0 50px;
+}
+
+.krk-map_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.krk-map {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: flex-start;
+  float: left;
+  display: block;
+  margin-right: 70px;
+}
+
+.krk-img_item {
+  width: 450px;
+  height: 450px;
+  margin-left: 70px;
+}
+
+@media (max-width: 858px) {
+  .krk-map_logo {
+    flex-direction: column;
+  }
+
+  /*   .krk-map {
+    width: 400px;
+    height: 200px;
+  } */
+}
+
+/* fotos */
+
+.fotos-container {
+  background-color: rgb(230, 227, 227);
+  padding-bottom: 30px;
+}
+
+.fotos-title {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  color: #172670;
+  margin: 30px 0;
+  font-family: "Mallanna", cursive;
+}
+
+.gallery {
+  margin: 10px 50px;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 400px;
+  padding: 15px;
+  transition: 1s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* kontakt */
+
+.kontakt {
+  background-color: #f3dbc7;
+  height: 60vh;
+}
+.kontakt-info {
+  /* padding: 80px 30px 20px; */
+  color: #172670;
+  /* margin: 30px 0 50px; */
+  font-family: "Mallanna", cursive;
+}
+
+.kontakt-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 50px 0 35px 0;
+}
+
+.kontakt-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin: 0 50px;
+}
+
+.kontakt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.kontakt-main {
+  display: grid;
+  grid-column-gap: 130px;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: row;
+}
+
+.kontakt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0px #0000002c;
+  border-radius: 8px;
+  height: 250px;
+  width: 220px;
+}
+
+.kontakt-icon {
+  width: 60px;
+  height: 60px;
+  color: #172670;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.kontakt-data {
+  display: flex;
+  font-size: 16px;
+  color: #172670;
+  flex-direction: column;
+  font-weight: 300px;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.kontakt-h3 {
+  font-weight: 500px;
+  color: "00bcd4";
+  font-size: 1.4em;
+}
+
+.kontakt-p {
+  font-size: 1.1em;
+}
+
+@media (max-width: 858px) {
+  .kontakt {
+    height: 188vh;
+  }
+
+  .kontakt-container {
+    flex-direction: column;
+  }
+
+  .kontakt-main {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kontakt-box {
+    margin-bottom: 45px;
+  }
+}
