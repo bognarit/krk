@@ -35,7 +35,7 @@ header {
 }
 label.logo {
   color: #ff0000;
-  font-size: 25px;
+  font-size: 1.55em;
   line-height: 50px;
   padding: 0 100px;
   font-weight: bold;
@@ -51,6 +51,7 @@ nav ul li {
   list-style: none;
 }
 nav ul li a {
+  font-size: 1.1em;
   display: block;
   color: #fff;
   padding: 0 20px;
@@ -61,6 +62,7 @@ nav ul li a {
 }
 a:hover {
   background: #172670;
+  font-size: 1.1em;
 }
 .checkbtn {
   font-size: 30px;
@@ -76,8 +78,9 @@ a:hover {
 }
 @media (max-width: 952px) {
   label.logo {
-    font-size: 1.2em;
-    padding-left: 50px;
+    font-size: 1.25em;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   nav ul li a {
@@ -91,7 +94,7 @@ a:hover {
   ul {
     position: fixed;
     width: 100%;
-    height: 35vh;
+    height: 27vh;
     background: rgba(0, 0, 0, 0.8);
     top: 50px;
     left: -100%;
@@ -156,13 +159,23 @@ a:hover {
   color: #ff0000;
   font-size: 2em;
 }
+
+@media (max-width: 858px) {
+  .home-title {
+    margin-left: 10%;
+    margin-top: 50%;
+    margin-right: 10%;
+  }
+}
+
 /* beschreibung */
 
 .beschreibung {
+  background-color: rgb(230, 227, 227);
+  padding-top: 70px;
 }
 
 .beschreibung-container {
-  background-color: rgb(223, 239, 248);
   color: #172670;
   font-family: "Mallanna", cursive;
   margin: 0 auto;
@@ -172,16 +185,52 @@ a:hover {
 .beschreibung-title {
   font-size: 2em;
   text-align: center;
-  padding: 80px 0 30px 0;
+  padding-bottom: 45px;
+}
+
+.beschreibung-title_span {
+  background: #ffffff;
+  padding: 0.7rem 0.7rem;
+  border: 1px solid #172670;
+  /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
+  /* padding: 0.5rem 2rem; */
 }
 
 .beschreibung-text {
   padding: 0 50px;
   text-align: justify;
+  font-size: 1.2em;
+  line-height: 30px;
+  letter-spacing: normal;
+  padding-bottom: 20px;
 }
 
-.beschreibung-teil {
+.beschreibung-subteil {
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.beschreibung-subtitle {
   padding-left: 80px;
+}
+
+.beschreibung-teil_ol {
+  padding-left: 120px;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 858px) {
+  .beschreibung {
+    height: 108vh;
+  }
+  .beschreibung-subtitle {
+    padding-left: 50px;
+  }
+  .beschreibung-teil_ol {
+    width: 90%;
+    padding-left: 90px;
+  }
 }
 
 /* lage */
@@ -204,14 +253,16 @@ a:hover {
 }
 
 .krk-title_span {
-  background: rgb(229, 233, 235);
-  padding: 0.5rem 2rem;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  background: rgb(230, 227, 227);
+  padding: 0.7rem 0.7rem;
+  border: 1px solid #172670;
+  /* clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%); */
+  /* padding: 0.5rem 2rem;  */
 }
 .krk-title {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .krk-text {
@@ -228,7 +279,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .krk-map {
@@ -251,10 +302,11 @@ a:hover {
     flex-direction: column;
   }
 
-  /*   .krk-map {
-    width: 400px;
-    height: 200px;
-  } */
+  .krk-map {
+    display: flex;
+    width: 100px;
+    height: 50px;
+  }
 }
 
 /* fotos */
@@ -270,8 +322,15 @@ a:hover {
   padding-top: 70px;
   padding-bottom: 25px;
   color: #172670;
-  margin: 30px 0;
   font-family: "Mallanna", cursive;
+}
+
+.fotos-title_span {
+  background: #ffffff;
+  padding: 0.7rem 0.7rem;
+  border: 1px solid #172670;
+  /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
+  /* padding: 0.5rem 2rem; */
 }
 
 .gallery {
@@ -293,19 +352,25 @@ a:hover {
 
 .kontakt {
   background-color: #f3dbc7;
-  height: 60vh;
+  height: 55vh;
 }
 .kontakt-info {
-  /* padding: 80px 30px 20px; */
   color: #172670;
-  /* margin: 30px 0 50px; */
   font-family: "Mallanna", cursive;
 }
 
 .kontakt-title {
   text-align: center;
   font-size: 2em;
-  padding: 50px 0 35px 0;
+  padding: 50px 0 45px 0;
+}
+
+.kontakt-title_span {
+  background: #ffffff;
+  padding: 0.7rem 0.7rem;
+  border: 1px solid #172670;
+  /* clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%); */
+  /* padding: 0.5rem 2rem; */
 }
 
 .kontakt-text {
@@ -377,7 +442,7 @@ a:hover {
 
 @media (max-width: 858px) {
   .kontakt {
-    height: 188vh;
+    height: 190vh;
   }
 
   .kontakt-container {
@@ -391,5 +456,8 @@ a:hover {
   }
   .kontakt-box {
     margin-bottom: 45px;
+  }
+  .kontakt-title {
+    line-height: 68px;
   }
 }
