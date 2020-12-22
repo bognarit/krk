@@ -118,6 +118,18 @@ a:hover {
   }
 }
 
+@media (max-width: 750px) {
+  label.logo {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  ul {
+    height: 40vh;
+    width: 100%;
+  }
+}
+
 /* home */
 
 .home {
@@ -165,6 +177,25 @@ a:hover {
     margin-left: 10%;
     margin-top: 50%;
     margin-right: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  .home {
+    height: 80vh;
+  }
+
+  .home-title {
+    margin-left: 8%;
+    margin-top: 25%;
+    margin-right: 12%;
+  }
+  .home-main_1 {
+    font-size: 1.8em;
+  }
+
+  .home-main_2 {
+    font-size: 1.7em;
   }
 }
 
@@ -230,6 +261,12 @@ a:hover {
   .beschreibung-teil_ol {
     width: 90%;
     padding-left: 90px;
+  }
+}
+
+@media (max-width: 750px) {
+  .beschreibung {
+    height: 200vh;
   }
 }
 
@@ -299,11 +336,22 @@ a:hover {
   .krk-map_logo {
     flex-direction: column;
   }
+}
+
+@media (max-width: 750px) {
+  .krk-map_logo {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 
   .krk-map {
-    display: flex;
-    width: 100px;
-    height: 50px;
+    margin-right: 20px;
+  }
+
+  .krk-img_item {
+    width: 330px;
+    height: 330px;
+    margin-left: 20px;
   }
 }
 
@@ -344,6 +392,12 @@ a:hover {
 
 .gallery-img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 750px) {
+  .gallery-img {
+    width: 280px;
+  }
 }
 
 /* kontakt */
@@ -457,5 +511,15 @@ a:hover {
   }
   .kontakt-title {
     line-height: 68px;
+  }
+}
+
+@media (max-width: 750px) {
+  .kontakt {
+    height: 330vh;
+  }
+  .kontakt-title {
+    line-height: 55px;
+    font-size: 1.7em;
   }
 }
