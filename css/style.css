@@ -1,4 +1,4 @@
-@import url("href=https://fonts.googleapis.com/css2?family=Mallanna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Mallana", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
 
@@ -31,7 +31,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
 }
 label.logo {
   color: #ff0000;
@@ -146,7 +146,7 @@ a:hover {
 
 .home-main_1 {
   text-transform: uppercase;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
   color: #ff0000;
   font-size: 2em;
   padding-bottom: 17px;
@@ -155,7 +155,7 @@ a:hover {
 
 .home-main_2 {
   text-transform: uppercase;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
   color: #ff0000;
   font-size: 2em;
 }
@@ -177,7 +177,7 @@ a:hover {
 
 .beschreibung-container {
   color: #172670;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
   margin: 0 auto;
   line-height: 30px;
 }
@@ -249,7 +249,7 @@ a:hover {
 
 .krk-main {
   color: #172670;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .krk-title_span {
@@ -322,7 +322,7 @@ a:hover {
   padding-top: 70px;
   padding-bottom: 25px;
   color: #172670;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .fotos-title_span {
@@ -356,7 +356,7 @@ a:hover {
 }
 .kontakt-info {
   color: #172670;
-  font-family: "Mallanna", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .kontakt-title {
