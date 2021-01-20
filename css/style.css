@@ -38,3 +38,12 @@ body {
   width: 100vw;
   position: relative;
 }
+
+.logo {
+  left: 2em;
+  top: 2em;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-image: url("logo.jpg");
+}
