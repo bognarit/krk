@@ -45,5 +45,10 @@ body {
   height: 100px;
   width: 100px;
   position: absolute;
-  background-image: url("logo.jpg");
+  background-image: url("logo.png");
+  background-size: cover;
+}
+
+.topBar {
+  width: 100%;
 }
