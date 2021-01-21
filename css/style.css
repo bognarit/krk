@@ -18,14 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --color-dark: #1d3557;
-  --color-light: #f1faee;
-  --color-light-medium: #a8dadc;
-  --color-medium: #457b9d;
-  --color-red: #e63946;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
@@ -37,11 +29,6 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background: url("Krk_Baska_Strand_bicolor.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top center;
-  position: absolute;
 }
 
 .logo {
@@ -63,6 +50,10 @@ body {
 .content {
   height: 95vh;
   width: 100%;
+  background: url("Krk_Baska_Strand_bicolor.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
 }
 
 .nav-main {
@@ -83,7 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 0.9em;
+  font-size: 1em;
   display: block;
   color: var(--color-light);
   padding: 0 20px;
@@ -91,4 +82,29 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 55px;
+}
+
+.title_main {
+  display: table;
+  margin-left: 58%;
+  margin-top: 1.5%;
+  padding: 20px 93px 20px 40px;
+  background-color: var(--color-red);
+  line-height: 40px;
+  letter-spacing: normal;
+  /* position: absolute; */
+}
+
+.title_1 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-light);
+  font-size: 2em;
+}
+
+.title_2 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-light);
+  font-size: 2em;
 }

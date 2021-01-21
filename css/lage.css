@@ -1,0 +1,47 @@
+.lage {
+  height: 95vh;
+  width: 100%;
+}
+
+.krk-container {
+  color: var(--color-dark);
+  font-family: "Open Sans", sans-serif;
+}
+
+.krk-title_span {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.krk-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.krk-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.krk-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin: 0 50px;
+}
+
+.krk-map_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.krk-map {
+  position: relative;
+  margin: 40px 200px 0 200px;
+}
