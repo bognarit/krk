@@ -85,6 +85,12 @@ nav ul li a {
 }
 
 .title_main {
+  /* das ist nicht so gut - wenn du mal im browser eine niedrige auflösung testest ist margin-left
+  zusammen mit der schriftgrösse nicht möglich und verursacht komische anzeigen
+
+  du kannst den container mit dem roten hintergrund rechts align machen oder float oder so sachen
+  oder aber in diesem fall position absolut und top und right 2 em oder so */
+
   display: table;
   margin-left: 58%;
   margin-top: 1.5%;
@@ -94,6 +100,23 @@ nav ul li a {
   letter-spacing: normal;
   /* position: absolute; */
 }
+
+
+/* der part ist im grunde so recht schlecht wie in der index.html beschrieben im kommentar
+besser ist allgemeine regel für h3 etc zu setzen und wenn man sachen hat, die identisch
+sind nicht doppelt schreiben sondern 
+
+.title_1 , title_2 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-light);
+  font-size: 2em;
+} 
+
+aber wie gesagt besser ist h1, h2, h3 selber zu stylen generell und dann kann man immernoch ne klasse anwenden oder umändern
+
+*/
+
 
 .title_1 {
   text-transform: uppercase;

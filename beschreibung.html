@@ -8,13 +8,17 @@
     <title>Seniorenurlaub</title>
     <link rel="shortout icon" type="image/x-icon" href="images/croatia.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/beschreibung.css" />
-    <link
+    <!-- <link rel="stylesheet" type="text/css" href="css/beschreibung.css" /> -->
+    <!-- keine seperaten stylesheets. wir nutzen nur 1 ( style.css ) erstmal und das soll möglichst klein bleiben -->
+   
+      <!-- wofür baust du font awesome ein? du benutzt es doch nirgendwo oder habe ich das übersehen -->
+
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body>
     <div class="wrap">
@@ -30,6 +34,18 @@
           </ul>
         </nav>
       </div>
+<!-- du kannst zwar ruhig section nutzen aber pack das mal in .content - das ist unser template wie im index -->
+<!-- 
+hier sind viel zu viele verschachtelungen die keinen sinn machen. zbsp die überschrift da hast du nen div mit class
+ beschreibung-main was schon reichen würde um alles dort drin zu stylen aber du hast auch noch eine klasse für h2 und
+ auch noch ein span tag um den text und der hat auch noch eine klasse diesmal mit unterstrich
+ überleg mal ob das irgendwie nützlich ist - die antwort ist nein und das sorgt nur für unnötig komplexes html
+ mach auch alles css in style.css du kannst dann eine überschrift zum bereich schreiben zbsp
+-->
+<!-- ############# index -->
+
+<!-- ########## beschreibung  -->
+<!-- überarbeite das ganze mal so und versuch alles überflüssige zu entfernen -->
 
       <section id="beschreibung" class="beschreibung">
         <div class="beschreibung-main">
