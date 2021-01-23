@@ -8,13 +8,13 @@
     <title>Seniorenurlaub</title>
     <link rel="shortout icon" type="image/x-icon" href="images/croatia.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- nur ein style sheet -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/fotos.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
     <!-- habe ich dir gesagt wir bauen keine libraries ein so ein einfaches ding wie overlay machen wir selber -->
-    <!-- <script
+    <script
       type="text/javascript"
       src="js/lightbox-plus-jquery.min.js"
-    ></script> -->
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -32,7 +32,7 @@
       </div>
       <!-- nicht <a href benutzen - wir haben div container und die haben als hintergrund bild das image. nachher bauen wir dort eventlistener auf die container
            wie auch in beschreibung.html geschrieben versuche klassen etc auf ein minimum zu reduzieren -->
-      <section id="fotos" class="fotos">
+      <div class="content-2">
         <div class="fotos-main">
           <h2 class="fotos-title">
             <span class="fotos-title_span">Fotos</span>
@@ -73,7 +73,7 @@
             /></a>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

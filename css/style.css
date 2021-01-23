@@ -85,49 +85,210 @@ nav ul li a {
 }
 
 .title_main {
-  /* das ist nicht so gut - wenn du mal im browser eine niedrige auflösung testest ist margin-left
-  zusammen mit der schriftgrösse nicht möglich und verursacht komische anzeigen
-
-  du kannst den container mit dem roten hintergrund rechts align machen oder float oder so sachen
-  oder aber in diesem fall position absolut und top und right 2 em oder so */
-
-  display: table;
-  margin-left: 58%;
-  margin-top: 1.5%;
-  padding: 20px 93px 20px 40px;
+  top: 5em;
+  right: 0em;
+  padding: 20px 65px 20px 40px;
   background-color: var(--color-red);
   line-height: 40px;
   letter-spacing: normal;
-  /* position: absolute; */
+  position: absolute;
 }
 
-
-/* der part ist im grunde so recht schlecht wie in der index.html beschrieben im kommentar
-besser ist allgemeine regel für h3 etc zu setzen und wenn man sachen hat, die identisch
-sind nicht doppelt schreiben sondern 
-
-.title_1 , title_2 {
+.content h3 {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   color: var(--color-light);
-  font-size: 2em;
-} 
-
-aber wie gesagt besser ist h1, h2, h3 selber zu stylen generell und dann kann man immernoch ne klasse anwenden oder umändern
-
-*/
-
-
-.title_1 {
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  color: var(--color-light);
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
-.title_2 {
-  text-transform: uppercase;
+.content-2 {
+  height: 95vh;
+  width: 100%;
+  color: var(--color-dark);
   font-family: "Open Sans", sans-serif;
+}
+
+/* Beschreibung */
+
+.beschr-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.beschr-title-span {
+  background: var(--color-dark);
   color: var(--color-light);
-  font-size: 2em;
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.beschr-text {
+  padding: 0 50px 30px 50px;
+  text-align: justify;
+  font-size: 1.2em;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+
+.beschr-subtitle {
+  padding-left: 80px;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+.beschr-teil-ol {
+  padding: 0 0 30px 120px;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+/* Lage */
+
+.krk-title_span {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.krk-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.krk-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin: 0 50px;
+}
+
+.krk-map_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.krk-map {
+  position: relative;
+  margin: 70px 200px 0 200px;
+}
+
+/* Fotos */
+
+.fotos-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 60px 0 40px 0;
+}
+
+.fotos-title_span {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.gallery {
+  margin: 10px 50px;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 400px;
+  padding: 15px;
+  transition: 1s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Kontakt */
+
+.kontakt-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.kontakt-title-span {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(4% 0, 100% 0, 96% 100%, 0 100%);
+}
+
+.kontakt-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin: 0 50px;
+}
+
+.kontakt-main {
+  display: grid;
+  grid-column-gap: 180px;
+  grid-template-columns: auto auto auto;
+  flex-direction: row;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0px #0000002c;
+  border-radius: 8px;
+  height: 250px;
+  width: 220px;
+}
+
+.kontakt-icon {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border: 1px solid var(--color-dark);
+}
+
+.kontakt-data {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300px;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.kontakt-h3 {
+  font-weight: 500px;
+  font-size: 1.3em;
+  padding-bottom: 8px;
+}
+
+.kontakt-p {
+  font-size: 1.1em;
+}
+
+.mail {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: var(--color-red);
 }

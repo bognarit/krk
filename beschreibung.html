@@ -8,10 +8,8 @@
     <title>Seniorenurlaub</title>
     <link rel="shortout icon" type="image/x-icon" href="images/croatia.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/beschreibung.css" /> -->
-    <!-- keine seperaten stylesheets. wir nutzen nur 1 ( style.css ) erstmal und das soll möglichst klein bleiben -->
-   
-      <!-- wofür baust du font awesome ein? du benutzt es doch nirgendwo oder habe ich das übersehen -->
+
+    <!-- wofür baust du font awesome ein? du benutzt es doch nirgendwo oder habe ich das übersehen -->
 
     <!-- <link
       rel="stylesheet"
@@ -34,64 +32,45 @@
           </ul>
         </nav>
       </div>
-<!-- du kannst zwar ruhig section nutzen aber pack das mal in .content - das ist unser template wie im index -->
-<!-- 
-hier sind viel zu viele verschachtelungen die keinen sinn machen. zbsp die überschrift da hast du nen div mit class
- beschreibung-main was schon reichen würde um alles dort drin zu stylen aber du hast auch noch eine klasse für h2 und
- auch noch ein span tag um den text und der hat auch noch eine klasse diesmal mit unterstrich
- überleg mal ob das irgendwie nützlich ist - die antwort ist nein und das sorgt nur für unnötig komplexes html
- mach auch alles css in style.css du kannst dann eine überschrift zum bereich schreiben zbsp
--->
-<!-- ############# index -->
 
-<!-- ########## beschreibung  -->
-<!-- überarbeite das ganze mal so und versuch alles überflüssige zu entfernen -->
+      <div class="content-2">
+        <h2 class="beschr-title">
+          <span class="beschr-title-span">Beschreibung</span>
+        </h2>
+        <p class="beschr-text">
+          Waren Sie schon einmal auf einer goldenen Insel? Wenn nicht, wird Sie
+          ein Urlaub auf der Insel Krk begeistern. Zauberhafte Strände,
+          kristallklares Wasser und eine atemberaubende Natur werden Sie in
+          Ihren Bann ziehen. Wir organisieren den Urlaub den Senioren zwischen
+          April und September. Die Fahrt, die zwei Tage dauert, sichern wir
+          Ihnen mit dem Kleinbus. Zusammen können nur sechs Reisenden und ein
+          Fahrer wegen des Komforts fahren. Es gibt Möglichkeit, dass Sie auch
+          Ihre Haustiere mitnehmen. Wegen der Strecke ist eine Übernachtung in
+          Passau. Der Urlaub dauert zwei Wochen, aber man kann weiter bleiben.
+        </p>
 
-      <section id="beschreibung" class="beschreibung">
-        <div class="beschreibung-main">
-          <h2 class="beschreibung-title">
-            <span class="beschreibung-title_span">Beschreibung</span>
-          </h2>
-          <div class="beschreibung-text">
-            <p>
-              Waren Sie schon einmal auf einer goldenen Insel? Wenn nicht, wird
-              Sie ein Urlaub auf der Insel Krk begeistern. Zauberhafte Strände,
-              kristallklares Wasser und eine atemberaubende Natur werden Sie in
-              Ihren Bann ziehen. Wir organisieren den Urlaub den Senioren
-              zwischen April und September. Die Fahrt, die zwei Tage dauert,
-              sichern wir Ihnen mit dem Kleinbus. Zusammen können nur sechs
-              Reisenden und ein Fahrer wegen des Komforts fahren. Es gibt
-              Möglichkeit, dass Sie auch Ihre Haustiere mitnehmen. Wegen der
-              Strecke ist eine Übernachtung in Passau. Der Urlaub dauert zwei
-              Wochen, aber man kann weiter bleiben.
-            </p>
-          </div>
-          <div class="beschreibung-teil">
-            <h3 class="beschreibung-subtitle">Route:</h3>
-            <ol class="beschreibung-teil_ol">
-              <li>
-                Tag: Hamburg und Umgebung (100km)
-                <i class="fa fa-long-arrow-right"></i> Passau (Übernachtung)
-              </li>
-              <li>
-                Tag: Passau <i class="fa fa-long-arrow-right"></i> Insel Krk /
-                Kroatien
-              </li>
-            </ol>
-          </div>
-          <div class="beschreibung-teil">
-            <h3 class="beschreibung-subtitle">Inklusivleistungen:</h3>
-            <ol class="beschreibung-teil_ol">
-              <li>Unterkunft im Apartment</li>
-              <li>Vollpension Verpflegung</li>
-              <li>Haustiere erlaubt</li>
-              <li>Krankenversicherung</li>
-              <li>Hin- und Rückfahrten</li>
-              <li>Übernachtungen in Passau</li>
-            </ol>
-          </div>
-        </div>
-      </section>
+        <h3 class="beschr-subtitle">Route:</h3>
+        <ol class="beschr-teil-ol">
+          <li>
+            Tag: Hamburg und Umgebung (100km)
+            <i class="fa fa-long-arrow-right"></i> Passau (Übernachtung)
+          </li>
+          <li>
+            Tag: Passau <i class="fa fa-long-arrow-right"></i> Insel Krk /
+            Kroatien
+          </li>
+        </ol>
+
+        <h3 class="beschr-subtitle">Inklusivleistungen:</h3>
+        <ol class="beschr-teil-ol">
+          <li>Unterkunft im Apartment</li>
+          <li>Vollpension Verpflegung</li>
+          <li>Haustiere erlaubt</li>
+          <li>Krankenversicherung</li>
+          <li>Hin- und Rückfahrten</li>
+          <li>Übernachtungen in Passau</li>
+        </ol>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>
