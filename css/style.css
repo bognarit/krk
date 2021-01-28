@@ -111,7 +111,7 @@ nav ul li a {
 
 /* Beschreibung */
 
-#description h2{
+#description h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 60px 0;
@@ -132,7 +132,7 @@ nav ul li a {
   line-height: 30px;
 }
 
-#description h3{
+#description h3 {
   padding-left: 80px;
   font-size: 1.3em;
   line-height: 30px;
@@ -146,20 +146,20 @@ nav ul li a {
 
 /* Lage */
 
-.krk-title_span {
+#krk span {
   background: var(--color-dark);
   color: var(--color-light);
   padding: 0.5rem 2rem;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
-.krk-title {
+#krk h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 60px 0;
 }
 
-.krk-text {
+#krk p {
   font-size: 1.2em;
   text-align: justify;
   line-height: 30px;
@@ -167,56 +167,56 @@ nav ul li a {
   margin: 0 50px;
 }
 
-.krk-map_main {
+.krk-map {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.krk-map {
+#krk iframe {
   position: relative;
   margin: 70px 200px 0 200px;
 }
 
 /* Fotos */
 
-.fotos-title {
+#fotos h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 60px 0 40px 0;
 }
 
-.fotos-title_span {
+#fotos span {
   background: var(--color-dark);
   color: var(--color-light);
   padding: 0.5rem 2rem;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
-.gallery {
+#gallery {
   margin: 10px 50px;
   text-align: center;
 }
 
-.gallery-img {
+#gallery img {
   width: 400px;
   padding: 15px;
   transition: 1s;
 }
 
-.gallery-img:hover {
+#gallery img:hover {
   transform: scale(1.05);
 }
 
 /* Kontakt */
 
-.kontakt-title {
+#contact h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 60px 0;
 }
 
-.kontakt-title-span {
+#contact span {
   background: var(--color-dark);
   color: var(--color-light);
   padding: 0.5rem 2rem;
@@ -253,7 +253,7 @@ nav ul li a {
   width: 220px;
 }
 
-.kontakt-icon {
+.icon {
   width: 60px;
   height: 60px;
   background: #fff;
@@ -275,7 +275,7 @@ nav ul li a {
   letter-spacing: normal;
 }
 
-.kontakt-h3 {
+#contact h3 {
   font-weight: 500px;
   font-size: 1.3em;
   padding-bottom: 8px;
