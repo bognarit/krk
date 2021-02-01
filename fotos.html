@@ -9,7 +9,6 @@
     <link rel="shortout icon" type="image/x-icon" href="images/croatia.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
-    <!-- habe ich dir gesagt wir bauen keine libraries ein so ein einfaches ding wie overlay machen wir selber -->
     <script
       type="text/javascript"
       src="js/lightbox-plus-jquery.min.js"
@@ -20,7 +19,8 @@
     <div class="wrap">
       <div class="logo"></div>
       <div class="topBar">
-        <nav class="nav-main">
+        <nav>
+          <input id="nav-toggle" type="checkbox" />
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="beschreibung.html">Beschreibung</a></li>
@@ -28,10 +28,13 @@
             <li><a href="fotos.html">Fotos</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
         </nav>
       </div>
-      <!-- nicht <a href benutzen - wir haben div container und die haben als hintergrund bild das image. nachher bauen wir dort eventlistener auf die container
-           wie auch in beschreibung.html geschrieben versuche klassen etc auf ein minimum zu reduzieren -->
       <div class="content">
         <div id="fotos">
           <h2>
