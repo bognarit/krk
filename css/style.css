@@ -45,7 +45,6 @@ body {
   width: 100%;
   height: 5vh;
   background-color: var(--color-dark);
-  z-index: 10;
 }
 
 .start {
@@ -58,7 +57,6 @@ body {
 }
 
 nav {
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -87,72 +85,6 @@ nav ul li a {
   text-transform: uppercase;
   color: var(--color-light);
   text-decoration: none;
-}
-
-#nav-toggle {
-  position: absolute;
-  top: -100px;
-}
-nav .icon-burger {
-  position: absolute;
-  display: none;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-nav .icon-burger .line {
-  width: 30px;
-  height: 5px;
-  background-color: var(--color-light);
-  margin: 5px;
-  border-radius: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    float: none;
-    position: fixed;
-    z-index: 9;
-    left: 0;
-    right: 0;
-    top: 5vh;
-    bottom: 100%;
-    width: auto;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
-  }
-  nav ul li a {
-    font-size: 1.1em;
-  }
-  nav :checked ~ ul {
-    bottom: 0;
-  }
-  nav .icon-burger {
-    display: block;
-    top: 23px;
-    background-color: var(--color-dark);
-  }
-  nav :checked ~ .icon-burger .line:nth-child(1) {
-    transform: translateY(10px) rotate(225deg);
-  }
-  nav :checked ~ .icon-burger .line:nth-child(3) {
-    transform: translateY(-10px) rotate(-225deg);
-  }
-  nav :checked ~ .icon-burger .line:nth-child(2) {
-    opacity: 0;
-  }
-  .title {
-    top: 10em;
-    right: 0em;
-    font-size: 0.9em;
-    padding: 18px 50px 18px 55px;
-  }
 }
 
 .content {
