@@ -1,4 +1,4 @@
-const mainLinks = document.getElementsByClassName("mainLink");
+const mainLinks = Array.from(document.getElementsByClassName("mainLink"));
 
 window.onload = function () {
   // init is the start function that starts when page loads
